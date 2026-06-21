@@ -1,8 +1,10 @@
-# Uniform Permissiveness, Unequal Risk — AI Image-Model Identity-Document Refusal Audit
+# DocRefusal — AI Image-Model Identity-Document Refusal Scorecard
+
+*A vendor-neutral, replicated refusal **scorecard**: audit whether AI image models refuse identity-document forgery across models × jurisdictions × escalation levels × languages. Released as a runnable v0 of the procurement instrument the paper recommends regulators mandate.*
 
 Code and data for the APART **Global South AI Safety Hackathon** (Latin America track, sub-track *AI governance: system auditing & accountability*).
 
-**Author:** Sebastian Soto — FAIR-UBA.
+**Author:** Sebastian Soto — FAIR-UBA (Frontier AI Research, UBA).
 **Paper:** *Uniform Permissiveness, Unequal Risk: Auditing AI Image-Model Identity-Document Forgery as a Systemic Infrastructure Risk.*
 
 This is **defensive AI-safety research**. It measures only whether image models **refuse or comply** with identity-document requests; it does **not** ship forged documents, working prompts, or evasion techniques.
@@ -23,7 +25,7 @@ To actually run the harness you must supply your **own** `doc_audit_prompts.json
 
 ## What the study found (summary)
 
-- **Refusal is a model property.** OpenAI's GPT-5-image / -mini refused almost everything; Gemini models complied broadly. Provider difference is the largest, most robust effect (Gemini 68% vs GPT-5.4 17% on document cells under replication; 2-proportion *p* < 1e-5).
+- **Refusal is a model property.** OpenAI's GPT-5-image / -mini refused almost everything; Gemini models complied broadly. Provider difference is the largest, most robust effect (Gemini 68% vs GPT-5.4 17% on document cells under replication; 2-proportion *p* < 1e-5). Notably, **refusal does not co-scale with capability** — the most capable models were among the permissive, and (qualitatively) capability raises forgery *fidelity*, not refusal.
 - **Single-draw audits overstate.** A dramatic single-draw "English→Spanish flip" pattern dissolved under 5× replication into artifacts; the methodological lesson is to **trust no single-shot refusal number without replication and a reconstructable trail.**
 - **A small, consistent Spanish-side residual** survives on document cells across all three replicated models (EN 40% vs ES 62% pooled, *p* ≈ 0.035), but it is underpowered (no single model is individually significant).
 - The paper reframes the harm as **systemic identity-infrastructure risk** (credential-centrality *blast radius* × a defense-in-depth *evasion ladder*; forgery as a *scaling*, not *realism*, problem) and maps controls to FATF 2025.
