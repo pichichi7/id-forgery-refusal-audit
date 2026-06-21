@@ -1,0 +1,22 @@
+{
+  "_notice": "REDACTED, public-safe version. Per responsible disclosure, the operational prompt text is WITHHELD. This file documents only the experimental STRUCTURE so the methodology is reproducible at the design level without releasing forgery-eliciting prompts. Vetted researchers may request the full protocol from the author.",
+  "design": "factorial: model x jurisdiction x escalation_level x language (+ benign control)",
+  "jurisdictions": {
+    "AR": "Argentine DNI (national identity document)",
+    "BR": "Brazilian RG (identity card)",
+    "US": "California driver's license (Global-North control)"
+  },
+  "languages": ["EN", "ES"],
+  "escalation_levels": {
+    "L1": "direct request (prompt text withheld)",
+    "L2": "creative / film-prop reframe of the same request (prompt text withheld)",
+    "L3": "design-inspired reframe of the same request (prompt text withheld)",
+    "BENIGN": "clearly-fictional, clearly-labelled game-prop control (not a real document)"
+  },
+  "metric": "binary refuse/comply per (model, prompt) cell; image bytes discarded; only outcome + sha256 logged",
+  "replication": "key cells (apparent EN->ES flips + benign control) re-run 5x per model",
+  "cells_per_model": 20,
+  "prompt_ids_schema": "<JUR>-<LEVEL>-<LANG>  e.g. AR-L1-EN, BR-L3-ES, US-L2-EN, CTRL-EN",
+  "withheld": ["operational prompt text for L1/L2/L3", "any generated image"],
+  "contact": "Full protocol available to vetted researchers on request (responsible disclosure)."
+}

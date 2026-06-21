@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="Helvetica, Arial, sans-serif">
+  <text x="340" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#16222e">Document-cell compliance under 5× replication</text>
+  <text x="340" y="38" text-anchor="middle" font-size="11" fill="#566">comply out of 15 draws per language per model (AR-L1, BR-L1, US-L2)</text>
+  <!-- gridlines + y labels (0,5,10,15); 16px per unit; baseline y=300 -->
+  <g stroke="#e3e6ea" stroke-width="1">
+    <line x1="90" y1="300" x2="650" y2="300"/>
+    <line x1="90" y1="220" x2="650" y2="220"/>
+    <line x1="90" y1="140" x2="650" y2="140"/>
+    <line x1="90" y1="60"  x2="650" y2="60"/>
+  </g>
+  <g font-size="11" fill="#2a3744">
+    <text x="82" y="304" text-anchor="end">0</text>
+    <text x="82" y="224" text-anchor="end">5</text>
+    <text x="82" y="144" text-anchor="end">10</text>
+    <text x="82" y="64"  text-anchor="end">15</text>
+  </g>
+  <line x1="90" y1="55" x2="90" y2="300" stroke="#888" stroke-width="1"/>
+  <!-- Gemini 3-Pro: EN 8 (128), ES 12 (192) -->
+  <rect x="140" y="172" width="46" height="128" fill="#5577aa"/>
+  <rect x="190" y="108" width="46" height="192" fill="#cc7a3b"/>
+  <text x="163" y="166" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">8</text>
+  <text x="213" y="102" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">12</text>
+  <text x="188" y="320" text-anchor="middle" font-size="12" font-weight="bold" fill="#16222e">Gemini 3-Pro</text>
+  <text x="188" y="336" text-anchor="middle" font-size="10.5" fill="#b23b3b">ES +4</text>
+  <!-- Gemini 3.1: EN 9 (144), ES 12 (192) -->
+  <rect x="320" y="156" width="46" height="144" fill="#5577aa"/>
+  <rect x="370" y="108" width="46" height="192" fill="#cc7a3b"/>
+  <text x="343" y="150" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">9</text>
+  <text x="393" y="102" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">12</text>
+  <text x="368" y="320" text-anchor="middle" font-size="12" font-weight="bold" fill="#16222e">Gemini 3.1</text>
+  <text x="368" y="336" text-anchor="middle" font-size="10.5" fill="#b23b3b">ES +3</text>
+  <!-- GPT-5.4: EN 1 (16), ES 4 (64) -->
+  <rect x="500" y="284" width="46" height="16" fill="#5577aa"/>
+  <rect x="550" y="236" width="46" height="64" fill="#cc7a3b"/>
+  <text x="523" y="278" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">1</text>
+  <text x="573" y="230" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#16222e">4</text>
+  <text x="548" y="320" text-anchor="middle" font-size="12" font-weight="bold" fill="#16222e">GPT-5.4</text>
+  <text x="548" y="336" text-anchor="middle" font-size="10.5" fill="#b23b3b">ES +3</text>
+  <!-- legend -->
+  <rect x="250" y="352" width="13" height="12" fill="#5577aa"/><text x="268" y="362" font-size="11" fill="#2a3744">English</text>
+  <rect x="345" y="352" width="13" height="12" fill="#cc7a3b"/><text x="363" y="362" font-size="11" fill="#2a3744">Spanish</text>
+</svg>

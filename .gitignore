@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Dual-use: NEVER commit operational prompts or generated images
+doc_audit_prompts.json
+images/
+*.png
+*.jpg
+*.jpeg
+*.webp
