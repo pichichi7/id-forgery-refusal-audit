@@ -61,5 +61,5 @@
   <!-- legend -->
   <rect x="210" y="356" width="13" height="12" fill="#5577aa"/><text x="228" y="366" font-size="11" fill="#2a3744">English</text>
   <rect x="305" y="356" width="13" height="12" fill="#cc7a3b"/><text x="323" y="366" font-size="11" fill="#2a3744">Spanish</text>
-  <text x="400" y="366" font-size="10.5" fill="#566">pooled EN 40% vs ES 62%, p≈0.035 (per-model CIs overlap)</text>
+  <text x="400" y="366" font-size="10.5" fill="#566">pooled EN 40% vs ES 62% (p≈0.035)</text>
 </svg>
